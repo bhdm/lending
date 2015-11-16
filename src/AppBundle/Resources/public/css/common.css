@@ -1,0 +1,139 @@
+.menu{
+    position: absolute;
+    top: 40px;
+    height: 40px;
+    background-color:  #0dbb80;
+    width: 100%;
+}
+.menu ul li{
+    display: inline-block;
+    line-height: 40px;
+    padding: 0 20px;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.menu ul li:hover{
+    background-color: #097c55;
+}
+
+.block-1 .slider{
+    /*margin-bottom: -50px;*/
+}
+.slider img{
+    width: 100%;
+}
+
+@media (min-width: 1200px){
+    .container {
+        max-width: 1500px;
+        width: auto;
+    }
+}
+.container{
+    padding: 0;
+    position: relative;
+    max-width: 1500px;
+    margin: 0 auto;
+    border-left: 1px solid #DDD;
+    border-right: 1px solid #DDD;
+    overflow: hidden;
+}
+.container{
+    background: #FAFAFA;
+}
+.form-box{
+    max-width: 1020px;
+    background: #c7ded9;
+    padding: 10px 20px;
+    margin: 0 auto;
+    z-index: 500;
+    box-shadow: 0px 28px 80px -17px #000000;
+    min-height: 110px;
+    position: relative;
+}
+.form-box-1{
+    margin-top: -50px;
+}
+.form-box-fixed{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    margin-left: -510px;
+    width: 1020px;
+}
+.content{
+    max-width: 1020px;
+    margin: 0 auto;
+    position: relative;
+}
+.air{
+    position: absolute;
+    left: -250px;;
+    top: -165px;
+}
+.content .row div{
+    padding: 0;
+    margin: 0;
+}
+.content .row{
+    padding: 0;
+    margin: 0;
+}
+.content .row div img{
+    width: 100%;
+}
+.content .row div img:hover{
+    filter: brightness(0.5);
+    -webkit-filter: brightness(0.5);
+    -moz-filter: brightness(0.5);
+    -o-filter: brightness(0.5);
+}
+.galery-item{
+    position: relative;
+}
+.galery-item a button{
+    margin-top: -40px;
+    margin-left: 20px;
+}
+
+.btn-orange{
+    color: #FFF;
+    background-color: #ffa914;
+}
+.btn-orange:hover{
+    color: #FFF;
+    background-color: #b77614;
+}
+.btn-green{
+    color: #FFF;
+    background: #808080;
+}
+
+.btn-green:hover{
+    color: #FFF;
+    background: #097c55;
+}
+
+.form-title{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.form-comment{
+    font-size: 0.8em;
+    text-align: center;
+    padding-top: 10px;
+}
+.gray{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    opacity: 0.5;
+}
