@@ -8,15 +8,20 @@
 
 <body>
 <div class="container">
-    <div class="menu">
-        <ul>
-            <li>О компании</li>
-            <li>Визы</li>
-            <li>Загранпаспорта</li>
-            <li>Загранпаспорта</li>
-            <li>Приглашения в РФ</li>
-            <li>Контакты</li>
-        </ul>
+    <div class="menu row">
+        <div class="hidden-xs hidden-sm col-md-1"></div>
+        <div class="hidden-xs hidden-sm col-md-2">
+            <img src="{{ asset('bundles/app/images/logo.png') }}">
+        </div>
+        <div class="col-sm-12 col-md-9">
+            <ul>
+                <li><a href="#about">О компании</a></li>
+                <li><a href="#visa">Визы</a></li>
+                <li><a href="#passport">Загранпаспорта</a></li>
+                <li><a href="#rf">Приглашения в РФ</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </div>
     </div>
     <div class="block block-1">
         <div class="slider">
@@ -27,10 +32,10 @@
                 <div class="form-title">Срочно расчитать стоимость визы</div>
                 <div class="row">
                     <div class="col-xs-4">
-                        <input type="text" placeholder="Ваше имя" class="form-control">
+                        <input type="text" required placeholder="Ваше имя" name="name"  class="form-control">
                     </div>
                     <div class="col-xs-5">
-                        <input type="text" placeholder="Ваш номер телефона" class="form-control">
+                        <input type="text" required placeholder="Ваш номер телефона" name="phone"  class="form-control">
                     </div>
                     <div class="col-xs-2">
                         <button type="submit" class="btn btn-orange">Узнать подробности</button>
@@ -47,15 +52,15 @@
         <div class="content">
             <div class="row">
                 <div class="col-md-4 col-xs-12 galery-item">
-                    <img src="{{ asset('bundles/app/images/img1-1.png') }}">
+                    <img src="{{ asset('bundles/app/images/img1-1.png') }}" id="btn1">
                     <a href="#"><button class="btn btn-green">Подробнее</button></a>
                 </div>
                 <div class="col-md-4 col-xs-12 galery-item">
-                    <img src="{{ asset('bundles/app/images/img1-2.png') }}">
+                    <img src="{{ asset('bundles/app/images/img1-2.png') }}" id="btn2">
                     <a href="#"><button class="btn btn-green">Подробнее</button></a>
                 </div>
                 <div class="col-md-4 col-xs-12 galery-item">
-                    <img src="{{ asset('bundles/app/images/img1-3.png') }}">
+                    <img src="{{ asset('bundles/app/images/img1-3.png') }}" id="btn3">
                     <a href="#"><button class="btn btn-green">Подробнее</button></a>
                 </div>
             </div>
@@ -79,6 +84,7 @@
                         <br />
                         <br />
                         <br />
+                        <br />
                     </p>
                 </div>
                 <div class="col-xs-12 col-sm-6">
@@ -99,56 +105,178 @@
                         <br />
                         <br />
                         <br />
+                        <br />
                     </p>
                 </div>
             </div>
         </div>
     </div>
-    <div class="block block-2">
+    <div class="block block-2" id="about">
         <div class="slider">
             <img src="{{ asset('bundles/app/images/slide-2.png') }}">
             <div class="content">
+                <br />
+                <br />
+                <br />
                 <div class="row">
                     <div class="col-xs-12 col-sm-6">
-                        <h2 style="text-align: center">Новые правила оформления <br />шенгенских виз!</h2>
-                        <p style="text-align: center">
-                            14 сентября 2015 г. введена обязательная процедура<br />
-                            сканирования отпечатков пальцев.<br />
-                            В связи с этим каждый заявитель должен будет явиться<br />
-                            на подачу документов лично в Консульство/Визовый центр, чтобы предоставить свои биометрические данные.<br />
-                            1 раз в 5 лет !!!
+                        <p style="text-align: justify; font-size: 18px">
+                            Сотрудники нашей компании всегда рады проконсультировать вас по всем вопросам относительно
+                            получения шенгенской визы. Обладая многолетним опытом в сфера, мы знаем все тонкости и
+                            подробности этого дела, и считаем своим долгом помогать нашим клиентам в получении всей
+                            необходимой информации.
                         </p>
                     </div>
-                    <div class="col-xs-12 col-sm-6">
-                        <h2 style="text-align: center">
-                            Процесс сдачи отпечатков пальцев<br />
-                            занимает всего несколько минут!
-                        </h2>
+                    <div class="col-sm-1">
+                    </div>
+                    <div class="col-xs-12 col-sm-5">
+                        <h2 class="text-center">+7 (499) 340-61-62</h2>
+                        <br />
+                        <div class="text-center">
+                            <button class="btn btn-green order" style="position: static">ЗАКАЗАТЬ ЗВОНОК</button>
+                        </div>
+                        <br />
                         <p style="text-align: center">
-                            От Сдачи отпечатков освобождаются дети до 12 лет ,<br />
-                            и лица, у которых физически нет возможности<br />
-                            взять отпечатки пальцев.
+                            Телефон, по которому вы можете<br />
+                            связаться с нашими менеджерами<br />
+                            и проконсультироваться.<br />
                         </p>
                     </div>
                 </div>
             </div>
+            <div class="form-box form-box-2">
+                <form method="POST" class="form">
+                    <div class="form-title">Срочно расчитать стоимость визы</div>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <input type="text" required placeholder="Ваше имя" name="name"  class="form-control">
+                        </div>
+                        <div class="col-xs-5">
+                            <input type="text" required placeholder="Ваш номер телефона" name="phone"  class="form-control">
+                        </div>
+                        <div class="col-xs-2">
+                            <button type="submit" class="btn btn-orange">Узнать подробности</button>
+                        </div>
+                    </div>
+                    <div class="form-comment">
+                        Мы не рассылаем спам и никогда не передадим Ваши данные третьим лицам.
+                    </div>
+                </form>
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
         </div>
     </div>
-
-
-
-
-    <!-- POP UP-->
-    <div class="gray"></div>
-    <div class="form-box form-box-fixed">
+    <div class="block block-3" id="visa">
+        <div class="slider">
+            <img src="{{ asset('bundles/app/images/slide-3.png') }}">
+        </div>
+        <div class="content">
+            <h2 style="text-align: center;">НЕОБХОДИМЫЕ ДОКУМЕНТЫ</h2>
+            <h3 style="text-align: center; margin-top: -10px">ДЛЯ ПОЛУЧЕНИЯ ВИЗЫ</h3>
+            <br />
+            <br />
+            <br />
+            <br />
+            <div class="row">
+                <div class="col-xs-12 col-sm-1"></div>
+                <div class="col-xs-2 col-sm-2 text-center">
+                    <img src="{{ asset('bundles/app/images/img3-1.png') }}" class="icon-big"/>
+                </div>
+                <div class="col-xs-2 col-sm-2 text-center">
+                    <img src="{{ asset('bundles/app/images/img3-2.png') }}" class="icon-big"/>
+                </div>
+                <div class="col-xs-2 col-sm-2 text-center">
+                    <img src="{{ asset('bundles/app/images/img3-3.png') }}" class="icon-big"/>
+                </div>
+                <div class="col-xs-2 col-sm-2 text-center">
+                    <img src="{{ asset('bundles/app/images/img3-4.png') }}" class="icon-big"/>
+                </div>
+                <div class="col-xs-2 col-sm-2 text-center">
+                    <img src="{{ asset('bundles/app/images/img3-5.png') }}" class="icon-big"/>
+                </div>
+                <div class="col-xs-12 col-sm-1"></div>
+            </div>
+            <br />
+            <br />
+            <div class="row">
+                <div class="col-xs-12 col-sm-1"></div>
+                <div class="col-xs-2 col-sm-2 text-center">
+                    Загранпаспорт
+                </div>
+                <div class="col-xs-2 col-sm-2 text-center">
+                    документальное<br />
+                    фото 3,5 х 4,5
+                </div>
+                <div class="col-xs-2 col-sm-2 text-center">
+                    Справка с работы
+                </div>
+                <div class="col-xs-2 col-sm-2 text-center">
+                    Выписка<br />
+                    с банковского счета
+                </div>
+                <div class="col-xs-2 col-sm-2 text-center">
+                    Копия Российского<br />
+                    паспорта
+                </div>
+                <div class="col-xs-12 col-sm-1"></div>
+            </div>
+        </div>
+    </div>
+    <div class="block block-3">
+        <div class="slider">
+            <img src="{{ asset('bundles/app/images/slide-4.png') }}">
+        </div>
+        <div class="content">
+            <h2 class="text-center text-uppercase">необходимые документы</h2>
+            <h2 class="text-center text-uppercase" style="font-size: 1.8em; margin-top: -10px">для получения визы</h2>
+            <br />
+            <h2 class="text-center text-uppercase" style="font-size: 1em; font-style: italic;">необходимо отправить нам на электронную почту:</h2>
+        </div>
+        <br />
+        <br />
+        <br />
+        <div class="slider slider-6">
+            <img src="{{ asset('bundles/app/images/slide-5.png') }}">
+        </div>
+        <br />
+        <div class="content">
+            <h2 class="text-center text-uppercase" style="font-size: 1.8em;">Пакет документов для самостоятельной подачи включает:</h2>
+        </div>
+        <br />
+        <br />
+        <div class="slider slider-6">
+            <img src="{{ asset('bundles/app/images/slide-6.png') }}">
+        </div>
+        <br />
+        <br />
+        <div class="content">
+            <h2 class="text-center text-uppercase" style="font-size: 1.8em;">
+                Готовый пaкет документов отправляем<br />
+                Вам по электронной почте<br />
+            </h2>
+            <h2 class="text-center text-uppercase red">Срок подготовки пaкетa документов для получения визы: 1 р. дн.</h2>
+            <br />
+            <div class="text-center">
+                <button class="btn btn-red text-uppercase order">Заказать услугу</button>
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <div class="form-box">
         <form method="POST" class="form">
             <div class="form-title">Срочно расчитать стоимость визы</div>
             <div class="row">
                 <div class="col-xs-4">
-                    <input type="text" placeholder="Ваше имя" class="form-control">
+                    <input type="text" required placeholder="Ваше имя" name="name"  class="form-control">
                 </div>
                 <div class="col-xs-5">
-                    <input type="text" placeholder="Ваш номер телефона" class="form-control">
+                    <input type="text" required placeholder="Ваш номер телефона" name="phone"  class="form-control">
                 </div>
                 <div class="col-xs-2">
                     <button type="submit" class="btn btn-orange">Узнать подробности</button>
@@ -159,14 +287,135 @@
             </div>
         </form>
     </div>
+    <br />
+    <br />
+    <br />
+    <div class="block block-4">
+        <div class="content">
+            <h2 class="text-center text-uppercase">Дополнительные услуги</h2>
+            <br />
+            <br />
+            <br />
+            <div class="row">
+                <div class="col-xs-1" ></div>
+                <div class="col-xs-3 text-center"><img src="{{ asset('bundles/app/images/img4-1.png') }}" class="icon-big"/></div>
+                <div class="col-xs-4 text-center"><img src="{{ asset('bundles/app/images/img4-2.png') }}" class="icon-big" /></div>
+                <div class="col-xs-3 text-center"><img src="{{ asset('bundles/app/images/img4-3.png') }}" class="icon-big" /></div>
+                <div class="col-xs-1" ></div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-xs-1" ></div>
+                <div class="col-xs-3 text-center">Забронировать<br />отель</div>
+                <div class="col-xs-4 text-center">Купить<br />медицинскую страховку</div>
+                <div class="col-xs-3 text-center">Бронирование<br />авиабилета</div>
+                <div class="col-xs-1" ></div>
+            </div>
+        </div>
+        <br />
+        <br />
+        <div class="slider slider-7">
+            <img src="{{ asset('bundles/app/images/slide-8.png') }}">
+        </div>
+        <div class="slider slider-8">
+            <img src="{{ asset('bundles/app/images/slide-7.png') }}">
+        </div>
+    </div>
+    <div class="block block-5" id="contacts">
+        <div class="content">
+            <br />
+            <br />
+            <div class="row">
+                <div class="hidden-xs col-sm-1"></div>
+                <div class="col-xs-12 col-sm-3">
+                    <br />
+                    <h2>Контакты</h2>
+                    <p>
+                        123001 г. Москва,<br />
+                        Трехпрудный пер., 11/13 стр.2<br />
+                        тел. <span class="text-big green">+7 (499) 340-61-62</span><br />
+                        м.Тверская, м.Маяковская<br />
+                    </p>
+                </div>
+                <div class="hidden-xs col-sm-1"></div>
+                <div class="col-xs-12 col-sm-6 text-center">
+                    <img src="{{ asset('bundles/app/images/map.png') }}">
+                </div>
+                <div class="hidden-xs col-sm-1"></div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="menu row footer">
+        <div class="col-xs-12">
+            <ul>
+                <li style="width: 300px; font-size: 0.5em; border-left: none">Created by MMG © 2015</li>
+                <li><a href="#about">О компании</a></li>
+                <li><a href="#visa">Визы</a></li>
+                <li><a href="#passport">Загранпаспорта</a></li>
+                <li><a href="#rf">Приглашения в РФ</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <!-- POP UP-->
+    <div class="gray"></div>
+    <div class="form-box form-box-fixed">
+        <form method="POST" class="form">
+            <div class="form-title">Срочно расчитать стоимость визы</div>
+            <div class="row">
+                <div class="col-xs-4">
+                    <input type="text" required placeholder="Ваше имя" name="name"  class="form-control">
+                </div>
+                <div class="col-xs-5">
+                    <input type="text" required placeholder="Ваш номер телефона" name="phone"  class="form-control">
+                </div>
+                <div class="col-xs-2">
+                    <button type="submit" class="btn btn-orange">Узнать подробности</button>
+                </div>
+            </div>
+            <div class="form-comment">
+                Мы не рассылаем спам и никогда не передадим Ваши данные третьим лицам.
+            </div>
+        </form>
+    </div>
+    <div class="form-box message-fixed">
+        Ваша заявка на "перезвонить отправлена"
+    </div>
 </div>
-    <script>
-        $(document).ready(function(){
-           $('.gray').click(function(){
-               $('.gray').fadeOut();
-               $('.form-box-fixed').fadeOut();
-           });
+<script>
+    //При клике на серый фон закрывает попап
+    $(document).ready(function(){
+        $('.gray').click(function(){
+            $('.gray').fadeOut();
+            $('.form-box-fixed').fadeOut();
+            $('.message-fixed').fadeOut();
         });
-    </script>
+
+        $("body").on("click","a", function (event) {
+            event.preventDefault();
+            var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+            $('body,html').animate({scrollTop: top}, 1500);
+        });
+
+        $('.order').click(function(){
+            $('.gray').fadeIn();
+            $('.form-box-fixed').fadeIn();
+        });
+
+        {% if isPost == true %}
+            $('.gray').fadeIn();
+            $('.message-fixed').fadeIn();
+        {% endif %}
+    });
+</script>
 </body>
 </html>
