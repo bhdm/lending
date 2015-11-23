@@ -135,7 +135,7 @@
 .content .row div img{
     width: 100%;
 }
-.content .row div img:hover{
+.content .row div img.img:hover{
     filter: brightness(0.5);
     -webkit-filter: brightness(0.5);
     -moz-filter: brightness(0.5);
@@ -161,6 +161,31 @@
     color: #FFF;
     background: #808080;
     position: absolute;
+}
+.btn-green-noactive{
+    background: none;
+    border-color: #0ec280;
+    color: #0ec280;
+}
+
+.btn-green-noactive:hover{
+    background: #0ec280;
+    color: #FFF;
+}
+
+.buttons button{
+    margin: 10px;
+    font-weight: bold;
+}
+.btn-green-active{
+    background: #0ec280;
+    color: #FFF;
+    border-color: #0ec280;
+}
+
+.btn-green-active:hover{
+    background: none;
+    color: #0ec280;
 }
 
 .btn-red{
@@ -190,9 +215,10 @@
     padding-top: 10px;
 }
 
-.icon-big{
+.icon-big, .icon4{
     width: 100%;
     max-width: 100px;
+    cursor: pointer;
 }
 .slider-6{
     text-align: center;
@@ -224,4 +250,26 @@
 }
 .footer ul li:hover{
     background: inherit;
+}
+.slider-flag{
+    background: url('../images/flag-bg.png');
+}
+.flag-box{
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.slider-flag .flag{
+    width: 155px;
+    padding: 10px;
+    cursor: pointer;
+}
+.flag-info .col-xs-5{
+    background: #FFFFFF;
+    height: 200px;
+    padding: 10px;
+}
+.flag-info .col-xs-5 img{
+    height: 100%;
+    max-height: 180px;
 }
