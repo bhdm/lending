@@ -202,32 +202,32 @@
                 </div>
                 <div class="row flag-info">
                     <div class="hidden-sm col-md-1"></div>
-                    <div class="col-xs-5"><img src="{{ asset('bundles/app/images/img-belg.png') }}"></div>
-                    <div class="col-xs-5">
-                        <table>
+                    <div class="col-xs-4"><img src="{{ asset('bundles/app/images/img-belg.png') }}"></div>
+                    <div class="col-xs-6">
+                        <table class="tbl">
                             <tr>
-                                <td>Тип визы</td>
-                                <td>Срок оформления</td>
-                                <td>Подача документов через аккредитованное агентство</td>
-                                <td>Личная подача документов в визовый центр</td>
+                                <td class="th1" style="width: 120px">Тип визы</td>
+                                <td class="th2" style="width: 150px">Срок оформления</td>
+                                <td class="th3">Подача документов через аккредитованное агентство</td>
+                                <td class="th4">Личная подача документов в визовый центр</td>
                             </tr>
                             <tr>
                                 <td>до 15 дней</td>
                                 <td>1-2 рабочих дня</td>
                                 <td></td>
-                                <td>30€</td>
+                                <td class="euro">30€</td>
                             </tr>
                             <tr>
                                 <td>до 90/180 дней</td>
                                 <td>1-2 рабочих дня</td>
                                 <td></td>
-                                <td>150€</td>
+                                <td class="euro">150€</td>
                             </tr>
                             <tr>
                                 <td>180/365 бизн.млт.</td>
                                 <td>1-2 рабочих дня</td>
                                 <td></td>
-                                <td>200€</td>
+                                <td class="euro">200€</td>
                             </tr>
                         </table>
                     </div>
@@ -270,13 +270,56 @@
                     <div class="col-xs-1"></div>
                 </div>
                 <div class="text-center"  style="font-size: 1.5em">
-                    Наши специалисты обладают достаточным  опытом <br />
+                    <h2>Наши специалисты обладают достаточным  опытом</h2>
                     и помогут оформить для Вас загранпаспорт  в необходимые для Вас сроки.
                 </div>
                 <div class="text-center red">Помогаем оформить загранпаспорта для жителей Москвы и регионов!</div>
                 <div class="text-center">
                     <button class="btn btn-orange">Заказать услуги</button>
                 </div>
+            </div>
+            <div>
+                <h2>Туристический ваучер оформляется 10 минут</h2>
+                <div>и Вы можете получить его по электронной почте.</div>
+                <br />
+                <br />
+                <div class="row">
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-5">
+                        <span style="font-size: 20px;font-weight: 700;font-style: italic;">Гражданам Европы, США, Канады и Австралии</span>
+                        для получения российской визы достаточно факсовой или электронной копии  ваучера.
+                        Эту копию и оригинал Вашего паспорта надо предъявить в российское Консульство за рубежом и в
+                        установленные для этого сроки, обычно 4-5 рабочих дней, оформить въездную российскую визу
+                        (весь текст и строка по стоимости в одной рамке).
+                        <br />
+                        <br />
+                        <span class="red">Стоимость от <span style="font-size: 20px">900 Р</span></span>
+                        <button class="btn btn-green-active">Заказать</button>
+                    </div>
+                    <div class="col-xs-5">
+                        <span style="font-size: 20px;font-weight: 700;font-style: italic;">Гражданам Южной Америки, Африки и Азии</span>
+                        для получения российской визы туристический ваучер необходимо предъявить в оригинале.
+                        Для этого Вы можете воспользоваться услугами экспресс-почты.
+                        <br />
+                        <br />
+                        <span class="red">Стоимость от <span style="font-size: 20px">900 Р</span></span>
+                        <button class="btn btn-green-active">Заказать</button>
+                        <br />
+                        <br />
+                        <span class="red">Стоимость от <span style="font-size: 20px">900 Р</span></span>
+                        <button class="btn btn-green-active">Заказать</button>
+                    </div>
+                    <div class="col-xs-1"></div>
+                </div>
+                <br />
+                <br />
+                <br />
+                <h2>ДЕЛОВОЕ ПРИГЛАШЕНИЕ</h2>
+                <div class="col-xs-1"></div>
+                <div class="col-xs-5">
+
+                </div>
+                <div class="col-xs-1"></div>
             </div>
 
         </div>
@@ -531,6 +574,10 @@
                     $(this).attr('src','/bundles/app/images/'+$(this).attr('data-img')+'.png');
                 }
         );
+
+        $('.flag').click(function(){
+            $('.flag-info').fadeToggle();
+        })
     });
 </script>
 </body>
