@@ -1,3 +1,16 @@
+@font-face {
+    font-family: MYRIADPRO; /* Имя шрифта */
+    src: url('../fonts/fwd/MYRIADPRO-LIGHT.OTF'); /* Путь к файлу со шрифтом */
+    font-weight: normal;
+}
+@font-face {
+    font-family: MYRIADPRO; /* Имя шрифта */
+    src: url('../fonts/fwd/MYRIADPRO-BOLD.OTF'); /* Путь к файлу со шрифтом */
+    font-weight: bold;
+}
+*{
+    font-family: MYRIADPRO;
+}
 .menu{
     position: absolute;
     top: 40px;
@@ -5,13 +18,24 @@
     background-color:  #0dbb80;
     width: 100%;
 }
+.menu.row{
+    margin: 0;
+}
+.menu.row div{
+    margin: 0;
+    padding: 0;
+}
 .menu ul li{
     display: inline-block;
     line-height: 40px;
-    padding: 0 20px;
+    padding: 0 8px;
     cursor: pointer;
     color: #FFFFFF;
     font-weight: bold;
+}
+.menu ul li a,.menu ul li a:hover{
+    color: #FFF;
+    text-decoration: none;
 }
 
 .menu ul li:hover{
@@ -29,6 +53,9 @@
     .container {
         max-width: 1500px;
         width: auto;
+    }
+    .menu ul li {
+        padding: 0 20px;
     }
 }
 .container{
@@ -62,7 +89,31 @@
     left: 50%;
     margin-left: -510px;
     width: 1020px;
+    display: none;
 }
+.message-fixed{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    margin-left: -510px;
+    width: 1020px;
+    display: none;
+    font-size: 1.5em;
+    text-align: center;
+    color: #035941;
+    min-height: 50px;
+}
+.gray{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    opacity: 0.8;
+    display: none;
+}
+
 .content{
     max-width: 1020px;
     margin: 0 auto;
@@ -84,7 +135,7 @@
 .content .row div img{
     width: 100%;
 }
-.content .row div img:hover{
+.content .row div img.img:hover{
     filter: brightness(0.5);
     -webkit-filter: brightness(0.5);
     -moz-filter: brightness(0.5);
@@ -109,6 +160,41 @@
 .btn-green{
     color: #FFF;
     background: #808080;
+    position: absolute;
+}
+.btn-green-noactive{
+    background: none;
+    border-color: #0ec280;
+    color: #0ec280;
+}
+
+.btn-green-noactive:hover{
+    background: #0ec280;
+    color: #FFF;
+}
+
+.buttons button{
+    margin: 10px;
+    font-weight: bold;
+}
+.btn-green-active{
+    background: #0ec280;
+    color: #FFF;
+    border-color: #0ec280;
+}
+
+.btn-green-active:hover{
+    background: none;
+    color: #0ec280;
+}
+
+.btn-red{
+    background: #c3453e;
+    color: #FFF;
+}
+.btn-red:hover{
+    background: #c3453e;
+    color: #FFF;
 }
 
 .btn-green:hover{
@@ -128,12 +214,62 @@
     text-align: center;
     padding-top: 10px;
 }
-.gray{
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: #000;
-    opacity: 0.5;
+
+.icon-big, .icon4{
+    width: 100%;
+    max-width: 100px;
+    cursor: pointer;
+}
+.slider-6{
+    text-align: center;
+}
+.slider-6 img{
+    width: 90%;
+    max-width: 900px;
+}
+.red{
+    color: #c3453e;
+    font-size: 1.4em;
+}
+.green{
+    color: #0dbb80;
+    font-size: 1.4em;
+}
+.footer{
+    height: 50px;
+    background-color:  #0dbb80;
+    width: 100%;
+    position: relative;
+    top: auto;
+}
+.footer ul li{
+    font-weight: normal;
+    line-height: 25px;
+    border-left: 1px solid #FFF;
+    margin-top: 10px;
+}
+.footer ul li:hover{
+    background: inherit;
+}
+.slider-flag{
+    background: url('../images/flag-bg.png');
+}
+.flag-box{
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.slider-flag .flag{
+    width: 155px;
+    padding: 10px;
+    cursor: pointer;
+}
+.flag-info .col-xs-5{
+    background: #FFFFFF;
+    height: 200px;
+    padding: 10px;
+}
+.flag-info .col-xs-5 img{
+    height: 100%;
+    max-height: 180px;
 }

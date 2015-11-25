@@ -15,7 +15,32 @@ class DefaultController extends Controller
      */
     public function indexAction(Request $request)
     {
-        return [];
+        $isPost = false;
+
+        if ($request->request->get('phone') && $request->request->get('name')){
+            $isPost = true;
+            $message = \Swift_Message::newInstance()
+                ->setSubject('Новый запрос')
+                ->setFrom('info@visahelper.ru')
+                ->setTo('visahelper@mail.ru')
+                ->setBody(
+                    'Новый запрос от '.$request->request->get('name').' ( '.$request->request->get('phone').' ) ',
+                    'text/html'
+                )
+                /*
+                 * If you also want to include a plaintext version of the message
+                ->addPart(
+                    $this->renderView(
+                        'Emails/registration.txt.twig',
+                        array('name' => $name)
+                    ),
+                    'text/plain'
+                )
+                */
+            ;
+            $this->get('mailer')->send($message);
+        }
+        return ['isPost' => $isPost];
     }
 
 }
