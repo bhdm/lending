@@ -52,16 +52,22 @@
         <div class="content">
             <div class="row">
                 <div class="col-md-4 col-xs-12 galery-item">
-                    <img src="{{ asset('bundles/app/images/img1-1.png') }}" id="btn1" class="img">
-                    <a href="#"><button class="btn btn-green">Подробнее</button></a>
+                    <a href="#visa">
+                        <img src="{{ asset('bundles/app/images/img1-1.png') }}" id="btn1" class="img">
+                        <button class="btn btn-green">Подробнее</button>
+                    </a>
                 </div>
                 <div class="col-md-4 col-xs-12 galery-item">
+                    <a href="#passport">
                     <img src="{{ asset('bundles/app/images/img1-2.png') }}" id="btn2" class="img">
-                    <a href="#"><button class="btn btn-green">Подробнее</button></a>
+                    <button class="btn btn-green">Подробнее</button>
+                    </a>
                 </div>
                 <div class="col-md-4 col-xs-12 galery-item">
-                    <img src="{{ asset('bundles/app/images/img1-3.png') }}" id="btn3" class="img">
-                    <a href="#"><button class="btn btn-green">Подробнее</button></a>
+                    <a href="#rf">
+                        <img src="{{ asset('bundles/app/images/img1-3.png') }}" id="btn3" class="img">
+                        <button class="btn btn-green">Подробнее</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -72,7 +78,7 @@
             <div class="row">
                 <div class="col-xs-6 col-sm-6">
                     <h2 style="text-align: center">Новые правила оформления <br />шенгенских виз!</h2>
-                    <p style="text-align: center">
+                    <p style="text-align: center; font-size: 18px">
                         14 сентября 2015 г. введена обязательная процедура<br />
                         сканирования отпечатков пальцев.<br />
                         В связи с этим каждый заявитель должен будет явиться<br />
@@ -81,23 +87,18 @@
                         <br />
                         <br />
                         <br />
-                        <br />
-                        <br />
-                        <br />
 
                     </p>
                 </div>
                 <div class="col-xs-6 col-sm-6">
-                    <h2 style="text-align: center">
+                    <h2 style="text-align: center;">
                         Процесс сдачи отпечатков пальцев<br />
                         занимает всего несколько минут!
                     </h2>
-                    <p style="text-align: center">
+                    <p style="text-align: center; font-size: 18px">
                         От Сдачи отпечатков освобождаются дети до 12 лет ,<br />
                         и лица, у которых физически нет возможности<br />
                         взять отпечатки пальцев.
-                        <br />
-                        <br />
                         <br />
                         <br />
                         <br />
@@ -180,12 +181,13 @@
     </div>
     <div class="block block-3" id="visa">
         <div class="slider slider-flag">
+            <br />
             <h2 class="text-center text-uppercase">Услуги по оформлению загранпаспортов</h2>
             <div class="buttons text-center">
 
-                <button class="btn btn-green-active">Визы</button>
-                <button class="btn btn-green-noactive">Загранпаспорта</button>
-                <button class="btn btn-green-noactive">Приглашение в РФ для иностранцев</button>
+                <button type="button" class="btn btn-green-active btn-visa"   id=""      >Визы</button>
+                <button type="button" class="btn btn-green-noactive btn-passport" id="">Загранпаспорта</button>
+                <button type="button" class="btn btn-green-noactive btn-rf" id=""      >Приглашение в РФ для иностранцев</button>
 
             </div>
             <br style="clear: both"/>
@@ -249,79 +251,6 @@
                     <div class="hidden-md col-md-1"></div>
                 </div>
             </div>
-            <div>
-                <div class="row">
-                    <div class="col-xs-1"></div>
-                    <div class="col-xs-5 text-center">
-                        <img src="{{ asset('bundles/app/images/img6-1.png') }}" class="icon-big" style="max-width: 280px">
-                        <p style="font-size: 1.6em">
-                            Оформление загранпаспорта –<br />
-                            сложный и отнимающий много времени процесс
-                        </p>
-                    </div>
-                    <div class="col-xs-5 text-center">
-                        <img src="{{ asset('bundles/app/images/img6-2.png') }}" class="icon-big" style="max-width: 220px">
-                        <p style="font-size: 1.6em">
-                            У каждого человека может<br />
-                            возникнуть ситуация, когда ему<br />
-                            необходимо выехать за границу
-                        </p>
-                    </div>
-                    <div class="col-xs-1"></div>
-                </div>
-                <div class="text-center"  style="font-size: 1.5em">
-                    <h2>Наши специалисты обладают достаточным  опытом</h2>
-                    и помогут оформить для Вас загранпаспорт  в необходимые для Вас сроки.
-                </div>
-                <div class="text-center red">Помогаем оформить загранпаспорта для жителей Москвы и регионов!</div>
-                <div class="text-center">
-                    <button class="btn btn-orange">Заказать услуги</button>
-                </div>
-            </div>
-            <div>
-                <h2>Туристический ваучер оформляется 10 минут</h2>
-                <div>и Вы можете получить его по электронной почте.</div>
-                <br />
-                <br />
-                <div class="row">
-                    <div class="col-xs-1"></div>
-                    <div class="col-xs-5">
-                        <span style="font-size: 20px;font-weight: 700;font-style: italic;">Гражданам Европы, США, Канады и Австралии</span>
-                        для получения российской визы достаточно факсовой или электронной копии  ваучера.
-                        Эту копию и оригинал Вашего паспорта надо предъявить в российское Консульство за рубежом и в
-                        установленные для этого сроки, обычно 4-5 рабочих дней, оформить въездную российскую визу
-                        (весь текст и строка по стоимости в одной рамке).
-                        <br />
-                        <br />
-                        <span class="red">Стоимость от <span style="font-size: 20px">900 Р</span></span>
-                        <button class="btn btn-green-active">Заказать</button>
-                    </div>
-                    <div class="col-xs-5">
-                        <span style="font-size: 20px;font-weight: 700;font-style: italic;">Гражданам Южной Америки, Африки и Азии</span>
-                        для получения российской визы туристический ваучер необходимо предъявить в оригинале.
-                        Для этого Вы можете воспользоваться услугами экспресс-почты.
-                        <br />
-                        <br />
-                        <span class="red">Стоимость от <span style="font-size: 20px">900 Р</span></span>
-                        <button class="btn btn-green-active">Заказать</button>
-                        <br />
-                        <br />
-                        <span class="red">Стоимость от <span style="font-size: 20px">900 Р</span></span>
-                        <button class="btn btn-green-active">Заказать</button>
-                    </div>
-                    <div class="col-xs-1"></div>
-                </div>
-                <br />
-                <br />
-                <br />
-                <h2>ДЕЛОВОЕ ПРИГЛАШЕНИЕ</h2>
-                <div class="col-xs-1"></div>
-                <div class="col-xs-5">
-
-                </div>
-                <div class="col-xs-1"></div>
-            </div>
-
         </div>
         <div class="content">
             <h2 style="text-align: center;">НЕОБХОДИМЫЕ ДОКУМЕНТЫ</h2>
@@ -376,144 +305,343 @@
         </div>
     </div>
 
-    <div class="block block-3">
-        <div class="slider">
-            <img src="{{ asset('bundles/app/images/slide-4.png') }}">
-        </div>
-        <div class="content">
-            <h2 class="text-center text-uppercase">необходимые документы</h2>
-            <h2 class="text-center text-uppercase" style="font-size: 1.8em; margin-top: -10px">для получения визы</h2>
+    <div class="block block-3" style="display: none;" id="passport">
+        <div class="slider slider-flag">
             <br />
-            <h2 class="text-center text-uppercase" style="font-size: 1em; font-style: italic;">необходимо отправить нам на электронную почту:</h2>
-        </div>
-        <br />
-        <br />
-        <br />
-        <div class="slider slider-6">
-            <img src="{{ asset('bundles/app/images/slide-5.png') }}">
-        </div>
-        <br />
-        <div class="content">
-            <h2 class="text-center text-uppercase" style="font-size: 1.8em;">Пакет документов для самостоятельной подачи включает:</h2>
-        </div>
-        <br />
-        <br />
-        <div class="slider slider-6">
-            <img src="{{ asset('bundles/app/images/slide-6.png') }}">
-        </div>
-        <br />
-        <br />
-        <div class="content">
-            <h2 class="text-center text-uppercase" style="font-size: 1.8em;">
-                Готовый пaкет документов отправляем<br />
-                Вам по электронной почте<br />
-            </h2>
-            <h2 class="text-center text-uppercase red">Срок подготовки пaкетa документов для получения визы: 1 р. дн.</h2>
-            <br />
-            <div class="text-center">
-                <button class="btn btn-red text-uppercase order">Заказать услугу</button>
+            <h2 class="text-center text-uppercase">Услуги по оформлению загранпаспортов</h2>
+            <div class="buttons text-center">
+
+                <button  type="button" class="btn btn-green-noactive btn-visa" id=""    >Визы</button>
+                <button  type="button" class="btn btn-green-active btn-passport"   id="">Загранпаспорта</button>
+                <button  type="button" class="btn btn-green-noactive btn-rf" id=""      >Приглашение в РФ для иностранцев</button>
+
             </div>
-        </div>
-    </div>
-    <br />
-    <br />
-    <br />
-    <div class="form-box">
-        <form method="POST" class="form">
-            <div class="form-title">Срочно расчитать стоимость визы</div>
-            <div class="row">
-                <div class="col-xs-4">
-                    <input type="text" required placeholder="Ваше имя" name="name"  class="form-control">
+            <br style="clear: both"/>
+            <br style="clear: both"/>
+            <div>
+                <div class="row">
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-5 text-center">
+                        <img src="{{ asset('bundles/app/images/img6-1.png') }}" class="icon-big" style="max-width: 280px">
+                        <p style="font-size: 1.6em">
+                            Оформление загранпаспорта –<br />
+                            сложный и отнимающий много времени процесс
+                        </p>
+                    </div>
+                    <div class="col-xs-5 text-center">
+                        <img src="{{ asset('bundles/app/images/img6-2.png') }}" class="icon-big" style="max-width: 220px">
+                        <p style="font-size: 1.6em">
+                            У каждого человека может<br />
+                            возникнуть ситуация, когда ему<br />
+                            необходимо выехать за границу
+                        </p>
+                    </div>
+                    <div class="col-xs-1"></div>
                 </div>
-                <div class="col-xs-5">
-                    <input type="text" required placeholder="Ваш номер телефона" name="phone"  class="form-control">
+                <div class="text-center"  style="font-size: 1.5em">
+                    <h2>Наши специалисты обладают достаточным  опытом</h2>
+                    и помогут оформить для Вас загранпаспорт  в необходимые для Вас сроки.
                 </div>
-                <div class="col-xs-2">
-                    <button type="submit" class="btn btn-orange">Узнать подробности</button>
+                <div class="text-center red">Помогаем оформить загранпаспорта для жителей Москвы и регионов!</div>
+                <div class="text-center">
+                    <button class="btn btn-orange">Заказать услуги</button>
                 </div>
             </div>
-            <div class="form-comment">
-                Мы не рассылаем спам и никогда не передадим Ваши данные третьим лицам.
-            </div>
-        </form>
+        </div>
+
+
+
+
+
+
+
+        {#<div class="content">#}
+        {#<h2 style="text-align: center;">НЕОБХОДИМЫЕ ДОКУМЕНТЫ</h2>#}
+        {#<h3 style="text-align: center; margin-top: -10px">ДЛЯ ПОЛУЧЕНИЯ ВИЗЫ</h3>#}
+        {#<br />#}
+        {#<br />#}
+        {#<br />#}
+        {#<br />#}
+        {#<div class="row">#}
+        {#<div class="col-xs-12 col-sm-1"></div>#}
+        {#<div class="col-xs-2 col-sm-2 text-center">#}
+        {#<img src="{{ asset('bundles/app/images/img3-1.png') }}" class="icon-big"/>#}
+        {#</div>#}
+        {#<div class="col-xs-2 col-sm-2 text-center">#}
+        {#<img src="{{ asset('bundles/app/images/img3-2.png') }}" class="icon-big"/>#}
+        {#</div>#}
+        {#<div class="col-xs-2 col-sm-2 text-center">#}
+        {#<img src="{{ asset('bundles/app/images/img3-3.png') }}" class="icon-big"/>#}
+        {#</div>#}
+        {#<div class="col-xs-2 col-sm-2 text-center">#}
+        {#<img src="{{ asset('bundles/app/images/img3-4.png') }}" class="icon-big"/>#}
+        {#</div>#}
+        {#<div class="col-xs-2 col-sm-2 text-center">#}
+        {#<img src="{{ asset('bundles/app/images/img3-5.png') }}" class="icon-big"/>#}
+        {#</div>#}
+        {#<div class="col-xs-12 col-sm-1"></div>#}
+        {#</div>#}
+        {#<br />#}
+        {#<br />#}
+        {#<div class="row">#}
+        {#<div class="col-xs-12 col-sm-1"></div>#}
+        {#<div class="col-xs-2 col-sm-2 text-center">#}
+        {#Загранпаспорт#}
+        {#</div>#}
+        {#<div class="col-xs-2 col-sm-2 text-center">#}
+        {#документальное<br />#}
+        {#фото 3,5 х 4,5#}
+        {#</div>#}
+        {#<div class="col-xs-2 col-sm-2 text-center">#}
+        {#Справка с работы#}
+        {#</div>#}
+        {#<div class="col-xs-2 col-sm-2 text-center">#}
+        {#Выписка<br />#}
+        {#с банковского счета#}
+        {#</div>#}
+        {#<div class="col-xs-2 col-sm-2 text-center">#}
+        {#Копия Российского<br />#}
+        {#паспорта#}
+        {#</div>#}
+        {#<div class="col-xs-12 col-sm-1"></div>#}
+        {#</div>#}
+        {#</div>#}
     </div>
-    <br />
-    <br />
-    <br />
-    <div class="block block-4">
-        <div class="content">
-            <h2 class="text-center text-uppercase">Дополнительные услуги</h2>
+
+    <div class="block block-3" style="display: none;" id="rf">
+        <div class="slider slider-flag">
             <br />
-            <br />
-            <br />
-            <div class="row">
-                <div class="col-xs-1" ></div>
-                <div class="col-xs-3 text-center"><img src="{{ asset('bundles/app/images/img4-1.png') }}" class="icon4" data-img="img4-1"/></div>
-                <div class="col-xs-4 text-center"><img src="{{ asset('bundles/app/images/img4-3.png') }}" class="icon4" data-img="img4-3" /></div>
-                <div class="col-xs-3 text-center"><img src="{{ asset('bundles/app/images/img4-2.png') }}" class="icon4" data-img="img4-2" /></div>
-                <div class="col-xs-1" ></div>
+            <h2 class="text-center text-uppercase">Оформление виз в страны шенгенского соглашения</h2>
+            <div class="buttons text-center">
+
+                <button  type="button" class="btn btn-green-noactive btn-visa" id=""    >Визы</button>
+                <button  type="button" class="btn btn-green-noactive btn-passport" id="">Загранпаспорта</button>
+                <button  type="button" class="btn btn-green-active btn-rf"   id=""      >Приглашение в РФ для иностранцев</button>
+
             </div>
-            <br />
-            <div class="row">
-                <div class="col-xs-1" ></div>
-                <div class="col-xs-3 text-center">Забронировать<br />отель</div>
-                <div class="col-xs-4 text-center">Купить<br />медицинскую страховку</div>
-                <div class="col-xs-3 text-center">Бронирование<br />авиабилета</div>
-                <div class="col-xs-1" ></div>
-            </div>
-        </div>
-        <br />
-        <br />
-        <div class="slider slider-7">
-            <img src="{{ asset('bundles/app/images/slide-8.png') }}">
-        </div>
-        <div class="slider slider-8">
-            <img src="{{ asset('bundles/app/images/slide-7.png') }}">
-        </div>
-    </div>
-    <div class="block block-5" id="contacts">
-        <div class="content">
-            <br />
-            <br />
-            <div class="row">
-                <div class="hidden-xs col-sm-1"></div>
-                <div class="col-xs-12 col-sm-3">
+            <br style="clear: both"/>
+            <br style="clear: both"/>
+            <div>
+                <h2 class="text-center text-uppercase">Туристический ваучер оформляется 10 минут</h2>
+                <div class="text-center" style="font-size: 26px">и Вы можете получить его по электронной почте.</div>
+                <br />
+                <br />
+                <div class="row">
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-5" style="font-size: 18px;">
+                        <span style="font-size: 20px;font-weight: 700;font-style: italic;">Гражданам Европы, США, Канады и Австралии</span>
+                        для получения российской визы достаточно факсовой или электронной копии  ваучера.
+                        Эту копию и оригинал Вашего паспорта надо предъявить в российское Консульство за рубежом и в
+                        установленные для этого сроки, обычно 4-5 рабочих дней, оформить въездную российскую визу
+                        (весь текст и строка по стоимости в одной рамке).
+                        <br />
+                        <br />
+                        <span class="red">Стоимость от <span style="font-size: 20px">900 Р</span></span>
+                        <button class="btn btn-green-active">Заказать</button>
+                    </div>
+                    <div class="col-xs-5" style="font-size: 18px;">
+                        <span style="font-size: 20px;font-weight: 700;font-style: italic;">Гражданам Южной Америки, Африки и Азии</span>
+                        для получения российской визы туристический ваучер необходимо предъявить в оригинале.
+                        Для этого Вы можете воспользоваться услугами экспресс-почты.
+                        <br />
+                        <br />
+                        <span class="red">Стоимость от <span style="font-size: 20px">900 Р</span></span>
+                        <button class="btn btn-green-active">Заказать</button>
+                        <br />
+                        <br />
+                        <span class="red">Стоимость от <span style="font-size: 20px">900 Р</span></span>
+                        <button class="btn btn-green-active">Заказать</button>
+                    </div>
+                    <div class="col-xs-1"></div>
+                </div>
+                <h2 class="text-center text-uppercase"><b>ДЕЛОВОЕ ПРИГЛАШЕНИЕ</b></h2>
+                <br />
+                <br />
+                <div class="row">
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-5"></div>
+                    <div class="col-xs-5"></div>
+                    <div class="col-xs-1"></div>
+                </div>
+                <div class="row text-center">
+                    <img src="{{ asset('bundles/app/images/table-1.png') }}" class="img-table">
                     <br />
-                    <h2>Контакты</h2>
-                    <p>
-                        123001 г. Москва,<br />
-                        Трехпрудный пер., 11/13 стр.2<br />
-                        тел. <span class="text-big green">+7 (499) 340-61-62</span><br />
-                        м.Тверская, м.Маяковская<br />
-                    </p>
+                    <h4 class="text-center text-uppercase">Документы сдаются на второй рабочий день. Отсчёт ведется со второго дня.</h4>
                 </div>
-                <div class="hidden-xs col-sm-1"></div>
-                <div class="col-xs-12 col-sm-6 text-center">
-                    <img src="{{ asset('bundles/app/images/map.png') }}">
+                <br />
+                <br />
+                <h2 class="text-center text-uppercase"><b>телекс</b></h2>
+                <p class="text-center">
+                    Телекс оформляется через Департамент Консульской службы МИД РФ и отсылается им непосредственно в <br />
+                    российское Консульство за рубежом по особым каналам связи. Для получения визы необходимо кроме <br />
+                    обычного пакета документов сообщить номер телекса.
+                </p>
+                <h4 class="text-center text-uppercase"><b>Необходимые документы: копия первой страницы паспорта и заполненная анкета</b></h4>
+                <br />
+                <div class="row text-center">
+                    <img src="{{ asset('bundles/app/images/table-2.png') }}" class="img-table">
+                    <br />
+                    <h4 class="text-center text-uppercase">Документы сдаются на второй рабочий день. Отсчёт ведется со второго дня.</h4>
                 </div>
-                <div class="hidden-xs col-sm-1"></div>
+                <br />
+                <br />
+                <h2 class="text-center text-uppercase"><b>Письмо-приглашение за 1 рабочий день срок до 30 дней</b></h2>
+                <p class="text-center">
+                    Такое приглашение оформляется на бланке международной общественной организации.<br />
+                    Его преимущество это срок оформления 1 рабочий день.<br />
+                    <span class="red">Письмо-приглашение оформляется только для граждан Евросоюза и США.</span>
+                </p>
+                <h4 class="text-center text-uppercase"><b>Необходимые документы: копия первой страницы паспорта и заполненная анкета</b></h4>
+                <br />
+                <div class="row text-center">
+                    <img src="{{ asset('bundles/app/images/table-3.png') }}" class="img-table">
+                    <br />
+                    <h6 class="text-center text-uppercase">Примечание: сроки 3 /5 лет возможны только при наличии не менее двух предыдущих виз в РФ. Для граждан США оформление только на 3 года.</h6>
+                </div>
             </div>
         </div>
     </div>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <div class="menu row footer">
-        <div class="col-xs-12">
-            <ul>
-                <li style="width: 300px; font-size: 0.5em; border-left: none">Created by MMG © 2015</li>
-                <li><a href="#about">О компании</a></li>
-                <li><a href="#visa">Визы</a></li>
-                <li><a href="#passport">Загранпаспорта</a></li>
-                <li><a href="#rf">Приглашения в РФ</a></li>
-                <li><a href="#contacts">Контакты</a></li>
-            </ul>
+
+
+
+
+
+        <div class="block block-3">
+            <div class="slider">
+                <img src="{{ asset('bundles/app/images/slide-4.png') }}">
+            </div>
+            <div class="content">
+                <h2 class="text-center text-uppercase">необходимые документы</h2>
+                <h2 class="text-center text-uppercase" style="font-size: 1.8em; margin-top: -10px">для получения визы</h2>
+                <br />
+                <h2 class="text-center text-uppercase" style="font-size: 1em; font-style: italic;">необходимо отправить нам на электронную почту:</h2>
+            </div>
+            <br />
+            <br />
+            <br />
+            <div class="slider slider-6">
+                <img src="{{ asset('bundles/app/images/slide-5.png') }}">
+            </div>
+            <br />
+            <div class="content">
+                <h2 class="text-center text-uppercase" style="font-size: 1.8em;">Пакет документов для самостоятельной подачи включает:</h2>
+            </div>
+            <br />
+            <br />
+            <div class="slider slider-6">
+                <img src="{{ asset('bundles/app/images/slide-6.png') }}">
+            </div>
+            <br />
+            <br />
+            <div class="content">
+                <h2 class="text-center text-uppercase" style="font-size: 1.8em;">
+                    Готовый пaкет документов отправляем<br />
+                    Вам по электронной почте<br />
+                </h2>
+                <h2 class="text-center text-uppercase red">Срок подготовки пaкетa документов для получения визы: 1 р. дн.</h2>
+                <br />
+                <div class="text-center">
+                    <button class="btn btn-red text-uppercase order">Заказать услугу</button>
+                </div>
+            </div>
         </div>
-    </div>
-
-
+        <br />
+        <br />
+        <br />
+        <div class="form-box">
+            <form method="POST" class="form">
+                <div class="form-title">Срочно расчитать стоимость визы</div>
+                <div class="row">
+                    <div class="col-xs-4">
+                        <input type="text" required placeholder="Ваше имя" name="name"  class="form-control">
+                    </div>
+                    <div class="col-xs-5">
+                        <input type="text" required placeholder="Ваш номер телефона" name="phone"  class="form-control">
+                    </div>
+                    <div class="col-xs-2">
+                        <button type="submit" class="btn btn-orange">Узнать подробности</button>
+                    </div>
+                </div>
+                <div class="form-comment">
+                    Мы не рассылаем спам и никогда не передадим Ваши данные третьим лицам.
+                </div>
+            </form>
+        </div>
+        <br />
+        <br />
+        <br />
+        <div class="block block-4">
+            <div class="content">
+                <h2 class="text-center text-uppercase">Дополнительные услуги</h2>
+                <br />
+                <br />
+                <br />
+                <div class="row">
+                    <div class="col-xs-1" ></div>
+                    <div class="col-xs-3 text-center"><img src="{{ asset('bundles/app/images/img4-1.png') }}" class="icon4" data-img="img4-1"/></div>
+                    <div class="col-xs-4 text-center"><img src="{{ asset('bundles/app/images/img4-3.png') }}" class="icon4" data-img="img4-3" /></div>
+                    <div class="col-xs-3 text-center"><img src="{{ asset('bundles/app/images/img4-2.png') }}" class="icon4" data-img="img4-2" /></div>
+                    <div class="col-xs-1" ></div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-xs-1" ></div>
+                    <div class="col-xs-3 text-center" style="font-size: 18px;">Забронировать<br />отель</div>
+                    <div class="col-xs-4 text-center" style="font-size: 18px;">Купить<br />медицинскую страховку</div>
+                    <div class="col-xs-3 text-center" style="font-size: 18px;">Бронирование<br />авиабилета</div>
+                    <div class="col-xs-1" ></div>
+                </div>
+            </div>
+            <br />
+            <br />
+            <div class="slider slider-7">
+                <img src="{{ asset('bundles/app/images/slide-8.png') }}">
+            </div>
+            <div class="slider slider-8">
+                <img src="{{ asset('bundles/app/images/slide-7.png') }}">
+            </div>
+        </div>
+        <div class="block block-5" id="contacts">
+            <div class="content">
+                <br />
+                <br />
+                <div class="row">
+                    <div class="hidden-xs col-sm-1"></div>
+                    <div class="col-xs-12 col-sm-3">
+                        <br />
+                        <h2>Контакты</h2>
+                        <p>
+                            123001 г. Москва,<br />
+                            Трехпрудный пер., 11/13 стр.2<br />
+                            тел. <span class="text-big green">+7 (499) 340-61-62</span><br />
+                            м.Тверская, м.Маяковская<br />
+                        </p>
+                    </div>
+                    <div class="hidden-xs col-sm-1"></div>
+                    <div class="col-xs-12 col-sm-6 text-center">
+                        <img src="{{ asset('bundles/app/images/map.png') }}">
+                    </div>
+                    <div class="hidden-xs col-sm-1"></div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <div class="menu row footer">
+            <div class="col-xs-12">
+                <ul>
+                    <li style="width: 300px; font-size: 0.5em; border-left: none">Created by MMG © 2015</li>
+                    <li><a href="#about">О компании</a></li>
+                    <li><a href="#visa">Визы</a></li>
+                    <li><a href="#passport">Загранпаспорта</a></li>
+                    <li><a href="#rf">Приглашения в РФ</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
 
     <!-- POP UP-->
     <div class="gray"></div>
@@ -540,6 +668,7 @@
         Ваша заявка на "перезвонить отправлена"
     </div>
 </div>
+
 <script>
     //При клике на серый фон закрывает попап
     $(document).ready(function(){
@@ -551,8 +680,25 @@
 
         $("body").on("click","a", function (event) {
             event.preventDefault();
+            if ($(this).attr('href') == '#visa'){
+                $('#passport').css('display','none');
+                $('#rf').css('display','none');
+                $('#visa').css('display','block');
+            }
+            if ($(this).attr('href') == '#passport'){
+                $('#visa').css('display','none');
+                $('#rf').css('display','none');
+                $('#passport').css('display','block');
+            }
+            if ($(this).attr('href') == '#rf'){
+                $('#visa').css('display','none');
+                $('#passport').css('display','none');
+                $('#rf').css('display','block');
+            }
+
             var id  = $(this).attr('href'),
                     top = $(id).offset().top;
+
             $('body,html').animate({scrollTop: top}, 1500);
         });
 
@@ -577,7 +723,23 @@
 
         $('.flag').click(function(){
             $('.flag-info').fadeToggle();
-        })
+        });
+
+        $('.btn-visa').click(function(){
+            $('#passport').css('display','none');
+            $('#rf').css('display','none');
+            $('#visa').css('display','block');
+        });
+        $('.btn-passport').click(function(){
+            $('#visa').css('display','none');
+            $('#rf').css('display','none');
+            $('#passport').css('display','block');
+        });
+        $('.btn-rf').click(function(){
+            $('#visa').css('display','none');
+            $('#passport').css('display','none');
+            $('#rf').css('display','block');
+        });
     });
 </script>
 </body>
