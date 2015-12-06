@@ -261,13 +261,16 @@
 }
 .flag-info{
     display: none;
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 .slider-flag .flag{
     width: 155px;
     padding: 10px;
     cursor: pointer;
 }
-.flag-info .col-xs-6, .flag-info .col-xs-4{
+.flag-info .col-xs-7, .flag-info .col-xs-5{
     background: #FFFFFF;
     height: 200px;
     padding: 10px;
