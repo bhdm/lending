@@ -24,7 +24,7 @@ class DefaultController extends Controller
             $message = \Swift_Message::newInstance()
                 ->setSubject('Новый запрос')
                 ->setFrom('info@visahelper.ru')
-                ->setTo('visahelper@mail.ru')
+                ->setTo('savkina@mail.ru')
                 ->setBody(
                     'Новый запрос от '.$request->request->get('name').' ( '.$request->request->get('phone').' ) ',
                     'text/html'
