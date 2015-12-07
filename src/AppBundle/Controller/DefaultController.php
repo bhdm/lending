@@ -52,7 +52,7 @@ class DefaultController extends Controller
     public function setCountryAction(){
         $em = $this->getDoctrine()->getManager();
         $title = 'Бельгия';
-        $body = ' <div class="col-xs-5"><img src="/bundles/app/images/img-country-3.png"></div>
+        $body = ' <div class="col-xs-5"><img src="/bundles/app/images/img-country-11.png"></div>
                     <div class="col-xs-7">
                         <table class="tbl">
                             <tr>
@@ -63,33 +63,34 @@ class DefaultController extends Controller
                             </tr>
                             <tr>
                                 <td>до 15 дней</td>
-                                <td>7-10 рабочих дней</td>
-                                <td></td>
-                                <td class="euro">30€</td>
+                                <td>5-6 рабочих дней</td>
+                                <td class="euro">160€</td>
+                                <td class="euro">80€</td>
                             </tr>
                             <tr>
                                 <td>до 30/90 дней</td>
-                                <td>7-10 рабочих дней</td>
-                                <td class="euro">270€</td>
+                                <td>5-6 рабочих дней</td>
+                                <td class="euro">240€</td>
+                                <td class="euro">140€</td>
+                            </tr>
+                            <tr>
+                                <td>до 90/180 дней</td>
+                                <td>5-6 рабочих дней</td>
+                                <td class="euro">350€</td>
                                 <td class="euro">200€</td>
                             </tr>
-                            <tr>
-                                <td>90/180 бизн.млт.</td>
-                                <td>7-10 рабочих дней</td>
-                                <td class="euro">400€</td>
-                                <td class="euro">500€</td>
-                            </tr>
+
                             <tr>
                                 <td>180/365 бизн.млт.</td>
-                                <td>7-10 рабочих дней</td>
-                                <td class="euro">500€</td>
-                                <td class="euro">350€</td>
+                                <td>5-6 рабочих дней</td>
+                                <td class="euro">400€</td>
+                                <td class="euro">300€</td>
                             </tr>
                             <tr>
-                                <td>3 года бизн.млт.</td>
-                                <td>7-10 рабочих дней</td>
-                                <td class="euro">600€</td>
-                                <td class="euro">450€</td>
+                                <td>2 года бизн.млт.</td>
+                                <td>5-6 рабочих дней</td>
+                                <td class="euro">550€</td>
+                                <td class="euro">350€</td>
                             </tr>
                         </table>
                     </div>';
@@ -97,8 +98,8 @@ class DefaultController extends Controller
         $country = new Country();
         $country->setTitle($title);
         $country->setBody($body);
-        $em->persist($country);
-        $em->flush($country);
+//        $em->persist($country);
+//        $em->flush($country);
 
         return new Response($body);
     }
@@ -110,4 +111,6 @@ class DefaultController extends Controller
         $country = $this->getDoctrine()->getRepository('AppBundle:Country')->find($request->request->get('id'));
         return new Response($country->getBody());
     }
+
+
 }

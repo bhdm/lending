@@ -1,9 +1,11 @@
 <html>
 <head>
     <link rel="stylesheet" href="{{ asset('bundles/app/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('bundles/app/js/jquery.blueberry/blueberry.css') }}">
     <link rel="stylesheet" href="{{ asset('bundles/app/css/common.css') }}">
     <script src="{{ asset('bundles/app/js/jquery-1.11.3.min.js') }}"></script>
     <script src="{{ asset('bundles/app/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('bundles/app/js/jquery.blueberry/jquery.blueberry.js') }}"></script>
 </head>
 
 <body>
@@ -25,7 +27,15 @@
     </div>
     <div class="block block-1">
         <div class="slider">
-            <img src="{{ asset('bundles/app/images/slide-1.png') }}">
+            <div class="blueberry">
+                <ul class="slides">
+                    <li><img src="{{ asset('bundles/app/images/banner-1.png') }}" /></li>
+                    <li><img src="{{ asset('bundles/app/images/banner-2.png') }}" /></li>
+                    <li><img src="{{ asset('bundles/app/images/banner-3.png') }}" /></li>
+                    <li><img src="{{ asset('bundles/app/images/banner-4.png') }}" /></li>
+                </ul>
+            </div>
+            {#<img src="{{ asset('bundles/app/images/slide-1.png') }}">#}
         </div>
         <div class="form-box form-box-1">
             <form method="POST" class="form">
@@ -752,6 +762,8 @@
             $('#passport').css('display','none');
             $('#rf').css('display','block');
         });
+
+        $('.blueberry').blueberry();
     });
 </script>
 <!-- Yandex.Metrika counter -->

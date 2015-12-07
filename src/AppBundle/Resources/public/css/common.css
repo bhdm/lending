@@ -17,6 +17,7 @@
     height: 40px;
     background-color:  #0dbb80;
     width: 100%;
+    z-index: 900;
 }
 .menu.row{
     margin: 0;
@@ -75,7 +76,7 @@
     background: #c7ded9;
     padding: 10px 20px;
     margin: 0 auto;
-    z-index: 500;
+    /*z-index: 500;*/
     box-shadow: 0px 28px 80px -17px #000000;
     min-height: 110px;
     position: relative;
@@ -264,6 +265,7 @@
     width: 80%;
     max-width: 1000px;
     margin: 0 auto;
+    background: #FFF;
 }
 .slider-flag .flag{
     width: 155px;
@@ -272,7 +274,7 @@
 }
 .flag-info .col-xs-7, .flag-info .col-xs-5{
     background: #FFFFFF;
-    height: 200px;
+    /*height: 200px;*/
     padding: 10px;
 }
 .flag-info .col-xs-5 img{
@@ -314,4 +316,22 @@
 }
 .img-table{
     width: 1000px !important;
+}
+
+.slides{
+    margin: 0;
+    padding: 0;
+    margin-top: -20px;
+}
+.blueberry .pager{
+    margin-top: -38px;
+    margin-bottom: 50px;
+    z-index: 900;
+    position: relative;
+}
+.pager li>a, .pager li>span{
+    border-radius: 0 !important;
+}
+.blueberry .pager li a {
+    padding: 10px 14px 13px 10px !important;
 }
