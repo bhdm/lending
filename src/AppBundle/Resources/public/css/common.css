@@ -104,6 +104,7 @@
     text-align: center;
     color: #035941;
     min-height: 50px;
+    z-index: 999;
 }
 .gray{
     position: fixed;
