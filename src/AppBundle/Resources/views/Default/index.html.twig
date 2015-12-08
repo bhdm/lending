@@ -13,7 +13,7 @@
     <div class="menu row">
         <div class="hidden-xs hidden-sm col-md-1"></div>
         <div class="hidden-xs hidden-sm col-md-2">
-            <img src="{{ asset('bundles/app/images/logo.png') }}" style="margin-top: -50px; cursor: pointer" class="order">
+            <img src="{{ asset('bundles/app/images/logo.png') }}" style="margin-top: -50px; cursor: pointer" class="order" id="banner">
         </div>
         <div class="col-sm-12 col-md-9">
             <ul>
@@ -764,6 +764,22 @@
         });
 
         $('.blueberry').blueberry();
+
+
+        window.onscroll = function() {
+            if ($(document).scrollTop() >= 50){
+                $('.menu').css('position', 'fixed');
+                $('.menu').css('top', '0');
+                $('.menu').css('left', '0');
+                $('#banner').css('display', 'none');
+            }else{
+                $('.menu').css('position', 'relative');
+                $('.menu').css('top', '40px');
+                $('.menu').css('left', 'inherit');
+                $('#banner').css('display', 'block');
+            }
+        }
+
     });
 </script>
 <!-- Yandex.Metrika counter -->
