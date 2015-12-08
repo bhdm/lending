@@ -10,7 +10,7 @@
 
 <body>
 <div class="container">
-    <div class="menu row">
+    <div class="menu row" id="menu">
         <div class="hidden-xs hidden-sm col-md-1"></div>
         <div class="hidden-xs hidden-sm col-md-2">
             <img src="{{ asset('bundles/app/images/logo.png') }}" style="margin-top: -50px; cursor: pointer" class="order" id="banner">
@@ -768,14 +768,14 @@
 
         window.onscroll = function() {
             if ($(document).scrollTop() >= 50){
-                $('.menu').css('position', 'fixed');
-                $('.menu').css('top', '0');
-                $('.menu').css('left', '0');
+                $('#menu').css('position', 'fixed');
+                $('#menu').css('top', '0');
+                $('#menu').css('left', '0');
                 $('#banner').css('display', 'none');
             }else{
-                $('.menu').css('position', 'relative');
-                $('.menu').css('top', '40px');
-                $('.menu').css('left', 'inherit');
+                $('#menu').css('position', 'relative');
+                $('#menu').css('top', '40px');
+                $('#menu').css('left', 'inherit');
                 $('#banner').css('display', 'block');
             }
         }
