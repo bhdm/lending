@@ -33,6 +33,8 @@
     cursor: pointer;
     color: #FFFFFF;
     font-weight: bold;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 .menu ul li a,.menu ul li a:hover{
     color: #FFF;
