@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     <link rel="stylesheet" href="{{ asset('bundles/app/css/bootstrap.min.css') }}">
@@ -6,6 +7,7 @@
     <script src="{{ asset('bundles/app/js/jquery-1.11.3.min.js') }}"></script>
     <script src="{{ asset('bundles/app/js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('bundles/app/js/jquery.blueberry/jquery.blueberry.js') }}"></script>
+    <script src="{{ asset('bundles/app/js/inputmask.js') }}"></script>
 </head>
 
 <body>
@@ -61,19 +63,19 @@
         <br />
         <div class="content">
             <div class="row">
-                <div class="col-md-4 col-xs-12 galery-item">
+                <div class="col-md-4 col-xs-4 galery-item">
                     <a href="#visa" class="dark">
                         <img src="{{ asset('bundles/app/images/img1-1.png') }}" id="btn1" class="img">
                         <button class="btn btn-green">Подробнее</button>
                     </a>
                 </div>
-                <div class="col-md-4 col-xs-12 galery-item">
+                <div class="col-md-4 col-xs-4 galery-item">
                     <a href="#passport" class="dark">
                     <img src="{{ asset('bundles/app/images/img1-2.png') }}" id="btn2" class="img">
                     <button class="btn btn-green">Подробнее</button>
                     </a>
                 </div>
-                <div class="col-md-4 col-xs-12 galery-item">
+                <div class="col-md-4 col-xs-4 galery-item">
                     <a href="#rf" class="dark">
                         <img src="{{ asset('bundles/app/images/img1-3.png') }}" id="btn3" class="img">
                         <button class="btn btn-green">Подробнее</button>
@@ -149,7 +151,7 @@
                     <div class="col-sm-1">
                     </div>
                     <div class="col-xs-12 col-sm-5">
-                        <h2 class="text-center">+7 (499) 340-61-62</h2>
+                        <h2 class="text-center"><a href="callto:+74993406132">+7 (499) 340-61-62</a></h2>
                         <br />
                         <div class="text-center">
                             <button class="btn btn-green order" style="position: static">ЗАКАЗАТЬ ЗВОНОК</button>
@@ -589,8 +591,8 @@
                 <div class="row">
                     <div class="col-xs-1" ></div>
                     <div class="col-xs-3 text-center"><img src="{{ asset('bundles/app/images/img4-1.png') }}" class="icon4" data-img="img4-1"/></div>
-                    <div class="col-xs-4 text-center"><img src="{{ asset('bundles/app/images/img4-2.png') }}" class="icon4" data-img="img4-3" /></div>
-                    <div class="col-xs-3 text-center"><img src="{{ asset('bundles/app/images/img4-3.png') }}" class="icon4" data-img="img4-2" /></div>
+                    <div class="col-xs-4 text-center"><img src="{{ asset('bundles/app/images/img4-2.png') }}" class="icon4" data-img="img4-2" /></div>
+                    <div class="col-xs-3 text-center"><img src="{{ asset('bundles/app/images/img4-3.png') }}" class="icon4" data-img="img4-3" /></div>
                     <div class="col-xs-1" ></div>
                 </div>
                 <br />
@@ -614,37 +616,35 @@
         <div class="block block-5" id="contacts">
             <div class="content">
                 <br />
-                <br />
                 <div class="row">
-                    <div class="hidden-xs col-sm-1"></div>
-                    <div class="col-xs-12 col-sm-3">
-                        <br />
+                    {#<div class="hidden-xs col-sm-1"></div>#}
+                    <div class="col-xs-12 col-sm-12">
                         <h2>Контакты</h2>
-                        <p>
-                            123001 г. Москва,<br />
-                            Трехпрудный пер., 11/13 стр.2<br />
-                            тел. <span class="text-big green">+7 (499) 340-61-62</span><br />
-                            м.Тверская, м.Маяковская<br />
+                        <p style="font-size: 16px">
+                            123001 г. Москва, Трехпрудный пер., 11/13 стр.2 м.Тверская, м.Маяковская <br />
+                            телефон: <span class="text-big green">
+                                <a href="callto:+74993406132" class="phone">+7 (499) 340-61-62</a>
+                            </span>
                         </p>
                     </div>
-                    <div class="hidden-xs col-sm-1"></div>
-                    <div class="col-xs-12 col-sm-6 text-center">
-                        <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=EUn8r0vZbqKKlGO3TM9TYV-L41tdazKp&width=480&height=275&lang=ru_RU&sourceType=constructor"></script>
-                    </div>
-                    <div class="hidden-xs col-sm-1"></div>
+                    {#<div class="hidden-xs col-sm-1"></div>#}
+                    {#<div class="hidden-xs col-sm-1"></div>#}
                 </div>
             </div>
+            <div style="height: 275px; display: block; overflow: hidden">
+                <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=EUn8r0vZbqKKlGO3TM9TYV-L41tdazKp&width=100%&height=275&lang=ru_RU&sourceType=constructor"></script>
+            </div>
+
         </div>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
         <div class="menu row footer">
-            <div class="col-xs-12">
+            <div class="col-xs-3">
+                <div id="author">
+                    Created by MMG © 2015
+                </div>
+            </div>
+            <div class="col-xs-9">
                 <ul>
-                    <li style="width: 300px; font-size: 0.5em; border-left: none">Created by MMG © 2015</li>
-                    <li><a href="#about">О компании</a></li>
+                    <li><a href="#about" style="border-right: 0">О компании</a></li>
                     <li><a href="#visa">Визы</a></li>
                     <li><a href="#passport">Загранпаспорта</a></li>
                     <li><a href="#rf">Приглашения в РФ</a></li>
@@ -763,8 +763,10 @@
             $('#rf').css('display','block');
         });
 
-        $('.blueberry').blueberry();
-
+        $('.blueberry').blueberry({'interval' : 5000});
+//        $('input[name=phone]').Inputmask("99-9999999");
+        var im = new Inputmask("+7(999) 999-99-99");
+        im.mask($('input[name=phone]'));
 
         window.onscroll = function() {
             if ($(document).scrollTop() >= 50){
@@ -773,7 +775,7 @@
                 $('#menu').css('left', '0');
                 $('#banner').css('display', 'none');
             }else{
-                $('#menu').css('position', 'relative');
+                $('#menu').css('position', 'absolute');
                 $('#menu').css('top', '40px');
                 $('#menu').css('left', 'inherit');
                 $('#banner').css('display', 'block');

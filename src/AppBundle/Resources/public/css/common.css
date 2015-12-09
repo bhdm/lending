@@ -11,6 +11,14 @@
 *{
     font-family: MYRIADPRO;
 }
+h2 a, h2 a:hover, h2 a:active, h2 a:focus{
+    text-decoration: none;
+    color: inherit;
+}
+.phone, .phone:hover, .phone:active, .phone:focus{
+    text-decoration: none;
+    color: inherit;
+}
 .menu{
     position: absolute;
     top: 40px;
@@ -350,4 +358,16 @@
 }
 .blueberry .pager li a {
     padding: 10px 14px 13px 10px !important;
+}
+#author{
+    padding-top: 17px;
+    padding-left: 20px;
+    color: #FFF;
+    font-size: 12px;
+}
+.blueberry{
+    height: 555px !important;
+}
+ul.slides{
+    /*position: absolute !important;*/
 }
