@@ -371,3 +371,66 @@ h2 a, h2 a:hover, h2 a:active, h2 a:focus{
 ul.slides{
     /*position: absolute !important;*/
 }
+.block-3-text{
+    margin-left: 250px;
+    margin-top: -65px;
+    padding-bottom: 15px;
+    color: #FFF;
+    text-align: center;
+
+}
+.block-4-text{
+    /*margin-left: 250px;*/
+    margin-top: -60px;
+    padding-bottom: 7px;
+    color: #FFF;
+    text-align: center;
+}
+.block-5-text{
+    margin-top: -203px;
+    padding-bottom: 7px;
+    font-size: 9px;
+    margin-left: 177px;
+}
+.block-5-text-1 hr{
+    margin: 10px 0px;
+    border: 1px solid #AAA;
+}
+.block-5-text-1{
+    width: 147px;
+    display: inline-block;
+    text-align: center;
+    display: table-cell;
+}
+
+.block-5-text-2{
+    width: 147px;
+    display: inline-block;
+    margin-left: 89px;
+    text-align: center;
+    display: table-cell;
+}
+.table-3{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.table-3 tr th{
+    background: #CCC;
+    padding: 10px 20px;
+    border: 0;
+    font-size: 20px;
+    text-align: center;
+}
+.table-3 tr td:nth-child(odd){
+    background: #EEE;
+}
+.table-3 tr td{
+    background: #DDD;
+    padding: 10px 20px;
+    border: 1px solid #AAA;
+    font-size: 20px;
+}
+.table-3 tr:hover td{
+    background: #BDEBDB;
+}
