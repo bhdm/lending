@@ -381,10 +381,10 @@ ul.slides{
 }
 .block-4-text{
     /*margin-left: 250px;*/
-    margin-top: -60px;
-    padding-bottom: 7px;
+    padding: 20px;
     color: #FFF;
     text-align: center;
+    background: #0DBB80;
 }
 .block-5-text{
     margin-top: -203px;
@@ -449,5 +449,13 @@ ul.slides{
     }
     .pager{
         display: none;
+    }
+
+    .block-3-text {
+        margin-left: 130px;
+        margin-top: -50px;
+        padding-bottom: 15px;
+        color: #FFF;
+        text-align: center;
     }
 }
