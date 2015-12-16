@@ -439,8 +439,15 @@ ul.slides{
         top: 0;
         height: auto;
         text-align: center;
+        position: relative;
     }
     .form-box-1{
         margin-top: 0;
+    }
+    .slider-flag .flag{
+        width: 100%;
+    }
+    .pager{
+        display: none;
     }
 }
