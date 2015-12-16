@@ -434,3 +434,13 @@ ul.slides{
 .table-3 tr:hover td{
     background: #BDEBDB;
 }
+@media (max-width: 768px) {
+    .menu.row{
+        top: 0;
+        height: auto;
+        text-align: center;
+    }
+    .form-box-1{
+        margin-top: 0;
+    }
+}

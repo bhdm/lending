@@ -66,19 +66,19 @@
                 <div class="col-md-4 col-xs-4 galery-item">
                     <a href="#visa" class="dark">
                         <img src="{{ asset('bundles/app/images/img1-1.png') }}" id="btn1" class="img">
-                        <button class="btn btn-green">Подробнее</button>
+                        <button class="btn btn-green hidden-xs">Подробнее</button>
                     </a>
                 </div>
                 <div class="col-md-4 col-xs-4 galery-item">
                     <a href="#passport" class="dark">
                     <img src="{{ asset('bundles/app/images/img1-2.png') }}" id="btn2" class="img">
-                    <button class="btn btn-green">Подробнее</button>
+                    <button class="btn btn-green hidden-xs">Подробнее</button>
                     </a>
                 </div>
                 <div class="col-md-4 col-xs-4 galery-item">
                     <a href="#rf" class="dark">
                         <img src="{{ asset('bundles/app/images/img1-3.png') }}" id="btn3" class="img">
-                        <button class="btn btn-green">Подробнее</button>
+                        <button class="btn btn-green hidden-xs">Подробнее</button>
                     </a>
                 </div>
             </div>
@@ -956,7 +956,7 @@
         im.mask($('input[name=phone]'));
 
         window.onscroll = function() {
-            if ($(document).width() > 550){
+            if ($(document).width() > 768){
                 if ($(document).scrollTop() >= 50){
                     $('#menu').css('position', 'fixed');
                     $('#menu').css('top', '0');
