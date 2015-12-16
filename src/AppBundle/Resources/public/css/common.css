@@ -366,7 +366,7 @@ h2 a, h2 a:hover, h2 a:active, h2 a:focus{
     font-size: 12px;
 }
 .blueberry{
-    height: 555px !important;
+    /*height: 555px !important;*/
 }
 ul.slides{
     /*position: absolute !important;*/
