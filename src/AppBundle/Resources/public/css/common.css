@@ -373,12 +373,13 @@ ul.slides{
 }
 .block-3-text{
     margin-left: 250px;
-    margin-top: -65px;
-    padding-bottom: 15px;
+    margin-top: -135px;
+    padding-bottom: 55px;
     color: #FFF;
     text-align: center;
 
 }
+
 .block-4-text{
     /*margin-left: 250px;*/
     padding: 20px;
@@ -434,6 +435,17 @@ ul.slides{
 .table-3 tr:hover td{
     background: #BDEBDB;
 }
+
+@media (min-width: 1200px) {
+    .block-3-text div{
+        font-size: 200% !important;
+    }
+}
+@media (max-width: 1200px) {
+    .line-text{
+        margin-bottom: 36px !important;
+    }
+}
 @media (max-width: 768px) {
     .menu.row{
         top: 0;
@@ -452,10 +464,11 @@ ul.slides{
     }
 
     .block-3-text {
-        margin-left: 130px;
-        margin-top: -50px;
+        margin-left: 0px;
+        margin-top: -45px;
         padding-bottom: 15px;
         color: #FFF;
         text-align: center;
+        padding-top: 10px;
     }
 }
