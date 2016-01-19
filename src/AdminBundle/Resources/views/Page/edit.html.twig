@@ -1,7 +1,7 @@
-{% extends "::base.html.twig" %}
+{% extends "AdminBundle::layout.html.twig" %}
 
-{% block title %}AdminBundle:Page:edit{% endblock %}
+{% block title %}Редактирование: {{ page.title }}{% endblock %}
 
 {% block body %}
-<h1>Welcome to the Page:edit page</h1>
+    {{ form_widget(form) }}
 {% endblock %}
