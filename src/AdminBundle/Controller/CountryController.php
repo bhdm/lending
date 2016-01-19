@@ -34,7 +34,7 @@ class CountryController extends Controller
         $country = $this->getDoctrine()->getRepository('AppBundle:Country')->findOneById($id);
         $form = $this->createFormBuilder($country)
             ->add('title', 'text', ['label' => 'Название'])
-            ->add('body', 'textarea')
+            ->add('body', 'textarea',['label' => 'Тект'])
             ->add('submit', 'submit', array('label' => 'Сохранить'))
             ->getForm();
         $form->handleRequest($request);
