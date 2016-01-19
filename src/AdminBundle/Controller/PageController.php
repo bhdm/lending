@@ -25,7 +25,7 @@ class PageController extends Controller
     }
 
     /**
-     * @Route("/edit/{id}")
+     * @Route("/edit/{id}", name="page_edit")
      * @Template()
      */
     public function editAction(Request $request, $id)

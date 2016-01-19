@@ -26,8 +26,8 @@ class ContentController extends Controller
         return ['items' => $items];
     }
 
+    //@Route("/edit/{id}", name="content_edit")
     /**
-     * @Route("/edit/{id}", name="content_edit")
      * @Template("")
      */
     public function editAction(Request $request, $id){
@@ -62,7 +62,7 @@ class ContentController extends Controller
                 $em->persist($item);
                 $em->flush($item);
                 $em->refresh($item);
-                return $this->redirect($this->generateUrl('content_listn'));
+                return $this->redirect($this->generateUrl('content_list'));
             }
         }
         return array('form' => $form->createView());
