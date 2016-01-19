@@ -134,8 +134,13 @@
 
 				//calculate and set height based on image width/height ratio and specified line height
 				var setsize = function(){
-					sliderWidth = $('.slides', obj).width();
+					//sliderWidth = $('.slides', obj).width();
+					sliderWidth = $(document).width();
 					cropHeight = Math.floor(((sliderWidth/imgRatio)/o.lineheight))*o.lineheight;
+					//console.log(sliderWidth);
+					//console.log(imgRatio);
+					//console.log(o.lineheight);
+
 
 					$('.slides', obj).css({height: cropHeight});
 				};

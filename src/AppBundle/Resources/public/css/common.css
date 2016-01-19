@@ -446,7 +446,7 @@ ul.slides{
         margin-bottom: 36px !important;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .menu.row{
         top: 0;
         height: auto;
@@ -470,5 +470,11 @@ ul.slides{
         color: #FFF;
         text-align: center;
         padding-top: 10px;
+    }
+    .block.block-3{
+        margin-top: 45px;
+    }
+    .blueberry .slides{
+        width: 100%;
     }
 }
