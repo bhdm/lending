@@ -20,7 +20,7 @@ class Content extends BaseEntity
     protected $title;
 
     /**
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="text")
      */
     protected $body;
 
