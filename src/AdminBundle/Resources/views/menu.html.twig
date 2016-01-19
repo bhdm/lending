@@ -1,0 +1,20 @@
+<div class="well">
+    <h2 class="modal-title">Навигация</h2>
+
+    {% elseif is_granted("ROLE_CLIENT") %}
+        <ul class="nav list-group">
+            <li class="">
+                <a href="{{ path('page_list') }}">
+                    <i class="glyphicon glyphicon-align-justify"></i>
+                    Страницы
+                </a>
+            </li>
+            <li class="">
+                <a href="#">
+                    <i class="glyphicon glyphicon-align-justify"></i>
+                    Страны
+                </a>
+            </li>
+        </ul>
+    {% endif %}
+</div>
