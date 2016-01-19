@@ -1,7 +1,7 @@
 <div class="well">
     <h2 class="modal-title">Навигация</h2>
 
-    {% elseif is_granted("ROLE_CLIENT") %}
+    {% if is_granted("ROLE_ADMIN") %}
         <ul class="nav list-group">
             <li class="">
                 <a href="{{ path('page_list') }}">
@@ -10,7 +10,7 @@
                 </a>
             </li>
             <li class="">
-                <a href="#">
+                <a href="{{ path('country_list', {'id': 'x'}) }}">
                     <i class="glyphicon glyphicon-align-justify"></i>
                     Страны
                 </a>

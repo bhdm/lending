@@ -31,7 +31,7 @@
                     {#{% if is_granted('ROLE_ADMIN') %}#}
                     <ul class="nav navbar-nav">
                         {#<li><a href="{{ path('order_list') }}" target="_blank">На сайт</a></li>#}
-                        <li><a href="{{ path('_security_logout') }}">Выйти</a></li>
+                        {#<li><a href="{{ path('_security_logout') }}">Выйти</a></li>#}
                     </ul>
                     {#{% endif %}#}
                 </div>
@@ -46,23 +46,17 @@
     {#<div class="alert alert-warning" role="alert"></div>#}
     {#<div class="alert alert-danger" role="alert"></div>#}
     <div class="row">
-        {% if is_granted('ROLE_ADMIN') %}
-        <div class="col-md-3">
-            {% block menu %}
-                {% include 'AppBundle::menu.html.twig' %}
-            {% endblock %}
-        </div>
-        <div class="col-md-9">
-            {% else %}
-            <div class="col-md-12s">
-                {% endif %}
-                {% block breadcrumb %}
-
+            <div class="col-md-3">
+                {% block menu %}
+                    {% include 'AdminBundle::menu.html.twig' %}
                 {% endblock %}
-                {% block content %}{% endblock %}
             </div>
+            <div class="col-md-9">
+                <div class="col-md-12s">
+                    <h2>{% block title %}{% endblock %}</h2>
+                    {% block body %}{% endblock %}
+                </div>
         </div>
     </div>
-    {% block body %}{% endblock %}
 </body>
 </html>

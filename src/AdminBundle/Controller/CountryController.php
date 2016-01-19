@@ -8,31 +8,31 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
- * @Route("/page")
+ * @Route("/country")
  */
-class PageController extends Controller
+class CountryController extends Controller
 {
     /**
-     * @Route("/list", name="page_list")
+     * @Route("/list", name="country_list")
      * @Template()
      */
     public function listAction()
     {
-        $pages = $this->getDoctrine()->getRepository('AppBundle:Content')->findAll();
+        $countries = $this->getDoctrine()->getRepository('AppBundle:Country')->findAll();
         return array(
-                'pages' => $pages,
+                'countries' => $countries,
             );
     }
 
     /**
-     * @Route("/edit/{id}")
+     * @Route("/edit/{id}", name="country_edit")
      * @Template()
      */
     public function editAction(Request $request, $id)
     {
         $em = $this->getDoctrine()->getManager();
-        $page = $this->getDoctrine()->getRepository('AppBundle:Content')->findOneById($id);
-        $form = $this->createFormBuilder($page)
+        $country = $this->getDoctrine()->getRepository('AppBundle:Country')->findOneById($id);
+        $form = $this->createFormBuilder($country)
             ->add('title', 'text', ['label' => 'Название'])
             ->add('body', 'textarea')
             ->add('submit', 'submit', array('label' => 'Сохранить'))
@@ -41,13 +41,13 @@ class PageController extends Controller
         if ($form->isSubmitted() && $form->isValid()) {
             $page = $form->getData();
             $em->flush($page);
-            return $this->redirectToRoute('page_list');
+            return $this->redirectToRoute('country_list');
         }
 
 
         return array(
                 'form' => $form->createView(),
-                'page' => $page
+                'country' => $country
             );
     }
 

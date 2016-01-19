@@ -1,6 +1,6 @@
 {% extends "AdminBundle::layout.html.twig" %}
 
-{% block title %}Список тектовых блоков{% endblock %}
+{% block title %}Список блоков стран{% endblock %}
 
 {% block body %}
     <table class="table">
@@ -9,12 +9,12 @@
             <th>Название</th>
             <th></th>
         </tr>
-        {% for page in pages %}
+        {% for c in countries %}
             <tr>
-                <td>{{ page.id }}</td>
-                <td>{{ page.title }}</td>
+                <td>{{ c.id }}</td>
+                <td>{{ c.title }}</td>
                 <td class="text-right">
-                    <a href="{{ path('page_edit',{ 'id' : page.id }) }}">
+                    <a href="{{ path('country_edit',{ 'id' : c.id }) }}">
                         <button class="btn btn-primary" type="button">
                             <span class="glyphicon glyphicon-edit"></span>
                         </button>
