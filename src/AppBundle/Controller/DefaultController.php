@@ -42,7 +42,9 @@ class DefaultController extends Controller
             ;
             $this->get('mailer')->send($message);
         }
-        return ['isPost' => $isPost];
+
+        $contents = $this->getDoctrine()->getRepository('AppBundle:Content')->findBy([],['id' => 'ASC']);
+        return ['isPost' => $isPost, 'contents' => $contents];
     }
 
 
